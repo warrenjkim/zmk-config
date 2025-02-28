@@ -1,0 +1,11 @@
+file_format: "1"
+id: lotus64
+name: Lotus64
+type: shield
+url: https://github.com/warrenjkim/lotus64
+requires: [nice_nano_v2]
+features:
+  - keys
+siblings:
+  - lotus64_left
+  - lotus64_right

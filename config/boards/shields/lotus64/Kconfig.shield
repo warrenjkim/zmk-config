@@ -1,0 +1,5 @@
+config SHIELD_LOTUS64_LEFT
+    def_bool $(shields_list_contains,lotus64_left)
+
+config SHIELD_LOTUS64_RIGHT
+    def_bool $(shields_list_contains,lotus64_right)
