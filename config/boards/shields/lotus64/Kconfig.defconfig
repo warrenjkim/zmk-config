@@ -1,13 +1,13 @@
 if SHIELD_LOTUS64_LEFT
 
-config ZMK_LOTUS64_NAME
+config ZMK_KEYBOARD_NAME
     default "Lotus64"
 
 endif
 
 if SHIELD_LOTUS64_RIGHT
 
-config ZMK_LOTUS64_NAME
+config ZMK_KEYBOARD_NAME
     default "Lotus64"
 
 endif
