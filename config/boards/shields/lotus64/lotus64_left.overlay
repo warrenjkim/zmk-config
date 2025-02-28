@@ -1,8 +1,8 @@
 /*
- * keyboard_left.overlay - Left half specific configuration
+ * lotus64_left.overlay - Left half specific configuration
  */
 
-#include "keyboard.dtsi"
+#include "lotus64.dtsi"
 
 &kscan0 {
     col-gpios

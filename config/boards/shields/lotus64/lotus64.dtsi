@@ -1,5 +1,5 @@
 /*
- * keyboard.dtsi - Main shared configuration
+ * lotus64.dtsi - Main shared configuration
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>

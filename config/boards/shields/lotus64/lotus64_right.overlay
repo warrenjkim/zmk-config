@@ -1,8 +1,8 @@
 /*
- * keyboard_right.overlay - Right half specific configuration
+ * lotus64_right.overlay - Right half specific configuration
  */
 
-#include "keyboard.dtsi"
+#include "lotus64.dtsi"
 
 &default_transform {
     col-offset = <7>;
