@@ -9,3 +9,6 @@ features:
 siblings:
   - lotus64_left
   - lotus64_right
+shields:
+  - lotus64_left
+  - lotus64_right
