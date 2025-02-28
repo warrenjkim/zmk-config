@@ -18,8 +18,8 @@
 // | ESC      |  1    |  2      |  3    |  4       |  5      |                       |  6     |  7       |  8       |  9       |  0      |   =   |
 // | TAB      |  Q    |  W      |  E    |  R       |  T      | <--  |      |  ^      |  Y     |  U       |  I       |  O       |  P      |   -   |
 // | SHIFT    |  A    |  S      |  D    |  F       |  G      | -->  |      |  v      |  H     |  J       |  K       |  L       |  ;      |   '   |
-// | LCRTL    |  Z    |  X      |  C    |  V       |  B      | "["  |      | "]"     |  N     |  M       |  ,       |  .       |  /      |   \   |
-//                    | ALT     | LOWER | SPACE    | BSPC    | GUI  |      | LOWER   | ENTER  | SPACE    | RGUI     | RCRTL
+// | LCTRL    |  Z    |  X      |  C    |  V       |  B      | "["  |      | "]"     |  N     |  M       |  ,       |  .       |  /      |   \   |
+//                    | ALT     | TOG   | SPACE    | BSPC    | GUI  |      | LOWER   | ENTER  | SPACE    | RGUI     | RCTRL
             bindings = <
     &kp ESC    &kp N1  &kp N2    &kp N3  &kp N4     &kp N5                            &kp N6   &kp N7     &kp N8     &kp N9     &kp N0    &kp EQUAL
     &kp TAB    &kp Q   &kp W     &kp E   &kp R      &kp T     &kp LEFT      &kp UP    &kp Y    &kp U      &kp I      &kp O      &kp P     &kp MINUS
