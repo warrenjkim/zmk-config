@@ -1,20 +1,22 @@
 if SHIELD_LOTUS64_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "Lotus64"
+    config ZMK_KEYBOARD_NAME
+        default "Lotus64"
 
+    config ZMK_USB
+        default y
 endif
 
 if SHIELD_LOTUS64_RIGHT
 
-config ZMK_KEYBOARD_NAME
-    default "Lotus64"
+    config ZMK_KEYBOARD_NAME
+        default "Lotus64"
 
 endif
 
 if SHIELD_LOTUS64_LEFT || SHIELD_LOTUS64_RIGHT
 
-config ZMK_SPLIT
-    default y
+    config ZMK_SPLIT
+        default y
 
 endif
