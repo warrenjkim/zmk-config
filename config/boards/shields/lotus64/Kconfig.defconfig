@@ -1,19 +1,14 @@
 if SHIELD_LOTUS64_LEFT
 	config ZMK_KEYBOARD_NAME
 		default "Lotus64"
-	config ZMK_USB
-		default y
-	config ZMK_SPLIT_ROLE_CENTRAL
+
+	config ZMK_SPLIT_BLE_ROLE_CENTRAL
 		default y
 endif
 
 if SHIELD_LOTUS64_RIGHT
 	config ZMK_KEYBOARD_NAME
 		default "Lotus64"
-	config ZMK_USB
-		default n
-	config ZMK_SPLIT_ROLE_PERIPHERAL
-		default y
 endif
 
 if SHIELD_LOTUS64_LEFT || SHIELD_LOTUS64_RIGHT
