@@ -10,8 +10,8 @@
 
 &kscan0 {
     col-gpios
-        = <&gpio0 6   GPIO_ACTIVE_HIGH>  // col 0
-        , <&gpio0 8   GPIO_ACTIVE_HIGH>  // col 1
+        = <&gpio1 1   GPIO_ACTIVE_HIGH>  // col 0
+        , <&gpio1 2   GPIO_ACTIVE_HIGH>  // col 1
         , <&gpio0 17  GPIO_ACTIVE_HIGH>  // col 2
         , <&gpio0 20  GPIO_ACTIVE_HIGH>  // col 3
         , <&gpio1 0   GPIO_ACTIVE_HIGH>  // col 4
@@ -28,3 +28,17 @@
         ;
 };
 
+// wired split UART configuration
+&uart0 {
+    status = "okay";
+    current-speed = <115200>;
+    tx-pin = <6>;  // GPIO0_6
+    rx-pin = <8>;  // GPIO0_8
+};
+
+/ {
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&uart0>;
+    };
+};
