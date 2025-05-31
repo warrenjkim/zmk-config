@@ -21,10 +21,6 @@
     };
 };
 
-&default_transform {
-    col-offset = <7>;
-};
-
 &kscan0 {
     col-gpios
         = <&gpio0 9   GPIO_ACTIVE_HIGH>  // col 0
