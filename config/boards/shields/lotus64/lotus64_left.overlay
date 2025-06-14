@@ -52,24 +52,6 @@
     pinctrl-names = "default", "sleep";
 };
 
-// SPI configuration for Nice!View
-&spi0 {
-    status = "okay";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;  // Nice!View CS
-
-    nice_view: ls0xx@0 {
-        compatible = "sharp,ls0xx";
-        label = "NICE_VIEW";
-        spi-max-frequency = <1000000>;
-        reg = <0>;
-        width = <160>;
-        height = <68>;
-    };
-};
-
 // Split keyboard configuration
 / {
     wired_split {
