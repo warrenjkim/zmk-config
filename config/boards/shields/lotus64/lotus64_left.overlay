@@ -58,8 +58,4 @@
         compatible = "zmk,wired-split";
         device = <&uart0>;
     };
-
-    chosen {
-        zmk,display = &nice_view;
-    };
 };
