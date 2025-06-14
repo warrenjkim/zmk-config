@@ -1,36 +1,17 @@
-# if SHIELD_LOTUS64_LEFT
-# 	config ZMK_KEYBOARD_NAME
-# 		default "Lotus64"
-#
-# 	config ZMK_SPLIT_ROLE_CENTRAL
-# 		default y
-# endif
-#
-# if SHIELD_LOTUS64_RIGHT
-# 	config ZMK_KEYBOARD_NAME
-# 		default "Lotus64"
-# endif
-#
-# if SHIELD_LOTUS64_LEFT || SHIELD_LOTUS64_RIGHT
-# 	config ZMK_SPLIT
-# 		default y
-# endif
-
 if SHIELD_LOTUS64_LEFT
 	config ZMK_KEYBOARD_NAME
 		default "Lotus64"
-  config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+
+	config ZMK_SPLIT_ROLE_CENTRAL
+		default y
 endif
 
 if SHIELD_LOTUS64_RIGHT
 	config ZMK_KEYBOARD_NAME
 		default "Lotus64"
-  config ZMK_SPLIT_ROLE_CENTRAL
-    default y
 endif
 
-if SHIELD_LOTUS64_RIGHT || SHIELD_LOTUS64_LEFT
+if SHIELD_LOTUS64_LEFT || SHIELD_LOTUS64_RIGHT
 	config ZMK_SPLIT
 		default y
 endif
