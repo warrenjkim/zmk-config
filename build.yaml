@@ -22,4 +22,4 @@ include:
   - board: nice_nano_v2
     shield: lotus64_left nice_view
   - board: nice_nano_v2
-    shield: lotus64_right
+    shield: lotus64_right nice_view
