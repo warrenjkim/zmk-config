@@ -75,7 +75,7 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 
     nice_view: ls0xx@0 {
         compatible        = "sharp,ls0xx";
