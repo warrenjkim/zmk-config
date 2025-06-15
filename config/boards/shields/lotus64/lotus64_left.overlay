@@ -2,12 +2,6 @@
  * lotus64_left.overlay - Left half specific configuration
  */
 
-/ {
-    aliases {
-        nice_view_spi = &spi0;
-    };
-};
-
 #include "lotus64.dtsi"
 
 &pinctrl {
