@@ -12,40 +12,39 @@
 #define LWR 1
 
 / {
-    keymap {
-        compatible = "zmk,keymap";
+  keymap {
+    compatible = "zmk,keymap";
 
-        default_layer {
-        //  |  ESC      |   1!   |   2@   |   3#     |   4$     |   5%     |                            |   6^    |   7&      |   8*      |   9(      |   0)     |   =+   |
-        //  |  TAB      |   Q    |   W    |   E      |   R      |   T      |   UP     |     |   LEFT    |   Y     |   U       |   I       |   O       |   P      |   -_   |
-        //  |  SHFT     |   A    |   S    |   D      |   F      |   G      |   DOWN   |     |   RIGHT   |   H     |   J       |   K       |   L       |   ;:     |   '"   |
-        //  |  CTRL     |   Z    |   X    |   C      |   V      |   B      |   [      |     |   ]       |   N     |   M       |   ,<      |   .>      |   /?     |   \|   |
-        //                                                                 |   ~      |     |   `       |
-        //                       |   L2   |   ALT    |   GUI    |   BSPC   |                            |   RET   |   SPC     |   SHFT    |   CTRL    |
+    default_layer {
+    //  |  ESC      |   1!   |   2@   |   3#     |   4$     |   5%     |                            |   6^    |   7&      |   8*      |   9(      |   0)     |   =+   |
+    //  |  TAB      |   Q    |   W    |   E      |   R      |   T      |   UP     |     |   LEFT    |   Y     |   U       |   I       |   O       |   P      |   -_   |
+    //  |  SHFT     |   A    |   S    |   D      |   F      |   G      |   DOWN   |     |   RIGHT   |   H     |   J       |   K       |   L       |   ;:     |   '"   |
+    //  |  CTRL     |   Z    |   X    |   C      |   V      |   B      |   [      |     |   ]       |   N     |   M       |   ,<      |   .>      |   /?     |   \|   |
+    //                       |   L2   |   ALT    |   GUI    |   BSPC   |   ~      |     |   `       |   RET   |   SPC     |   SHFT    |   CTRL    |
 
-          bindings = <
-            &kp ESC     &kp N1   &kp N2   &kp N3     &kp N4     &kp N5                                  &kp N6    &kp N7      &kp N8      &kp N9      &kp N0     &kp EQUAL
-            &kp TAB     &kp Q    &kp W    &kp E      &kp R      &kp T      &kp LEFT         &kp UP      &kp Y     &kp U       &kp I       &kp O       &kp P      &kp MINUS
-            &kp LSHFT   &kp A    &kp S    &kp D      &kp F      &kp G      &kp RIGHT        &kp DOWN    &kp H     &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
-            &kp LCTRL   &kp Z    &kp X    &kp C      &kp V      &kp B      &kp LBKT         &kp RBKT    &kp N     &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp BSLH
-                                 &mo LWR  &kp LALT   &kp LGUI   &kp BSPC   &kp TILDE        &kp GRAVE   &kp RET   &kp SPACE   &kp RSHFT   &kp RCTRL
-          >;
-        };
-        lower_layer {
-        //  |       |   F1    |   F2    |   F3      |   F4      |   F5      |                              |   F6       |   F7         |   F8         |   F9        |   F0      |        |
-        //  |       |         |         |           |           |           |          |      |            |            |              |              |             |           |        |
-        //  |       |         |         |           |           |           |          |      |            |   PREV     |   VOL_DOWN   |   VOL_UP     |   NEXT      |           |        |
-        //  |       |         |         |           |           |           |          |      |            |            |              |              |             |           |        |
-        //                                                                  |          |      |            |
-        //                    |         |           |           |           |                              |            |   PLAY       |              |             |
+      bindings = <
+        &kp ESC     &kp N1   &kp N2   &kp N3     &kp N4     &kp N5                                  &kp N6    &kp N7      &kp N8      &kp N9      &kp N0     &kp EQUAL
+        &kp TAB     &kp Q    &kp W    &kp E      &kp R      &kp T      &kp LEFT         &kp UP      &kp Y     &kp U       &kp I       &kp O       &kp P      &kp MINUS
+        &kp LSHFT   &kp A    &kp S    &kp D      &kp F      &kp G      &kp RIGHT        &kp DOWN    &kp H     &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
+        &kp LCTRL   &kp Z    &kp X    &kp C      &kp V      &kp B      &kp LBKT         &kp RBKT    &kp N     &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp BSLH
+                             &mo LWR  &kp LALT   &kp LGUI   &kp BSPC   &kp TILDE        &kp GRAVE   &kp RET   &kp SPACE   &kp RSHFT   &kp RCTRL
+      >;
+    };
 
-          bindings = <
-            &none   &kp F1    &kp F2    &kp F3      &kp F4      &kp F5                                     &kp F6       &kp F7         &kp F8         &kp F9        &kp F10      &none
-            &none   &none     &none     &none       &none       &none       &none             &none        &none        &none          &none          &none         &none        &none
-            &none   &none     &none     &none       &none       &none       &none             &none        &kp C_PREV   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT    &none        &none
-            &none   &none     &none     &none       &none       &none       &none             &none        &none        &none          &none          &none         &none        &none
-                              &none     &none       &none       &none       &none             &none        &none        &kp C_PP       &none          &none
-          >;
-        };
+    lower_layer {
+    //  |       |   F1    |   F2    |   F3      |   F4      |   F5      |                              |   F6       |   F7         |   F8         |   F9        |   F10     |        |
+    //  |       |         |         |           |           |           |          |      |            |            |              |              |             |           |        |
+    //  |       |         |         |           |           |           |          |      |            |   PREV     |   VOL_DOWN   |   VOL_UP     |   NEXT      |           |        |
+    //  |       |         |         |           |           |           |          |      |            |            |              |              |             |           |        |
+    //                    |         |           |           |           |          |      |            |            |   PLAY       |              |             |
+
+      bindings = <
+        &none   &kp F1    &kp F2    &kp F3      &kp F4      &kp F5                                     &kp F6       &kp F7         &kp F8         &kp F9        &kp F10      &none
+        &none   &none     &none     &none       &none       &none       &none             &none        &none        &none          &none          &none         &none        &none
+        &none   &none     &none     &none       &none       &none       &none             &none        &kp C_PREV   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT    &none        &none
+        &none   &none     &none     &none       &none       &none       &none             &none        &none        &none          &none          &none         &none        &none
+                          &none     &none       &none       &none       &none             &none        &none        &kp C_PP       &none          &none
+      >;
+    };
   };
 };
